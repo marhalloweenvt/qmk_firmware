@@ -1,0 +1,58 @@
+{
+    "manufacturer": "marhalloweenvt",
+    "keyboard_name": "MacroPad 2040",
+    "maintainer": "marhalloweenvt",
+    "url": "https://github.com/marhalloweenvt",
+    "processor": "RP2040",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0302",
+        "vid": "0x1601"
+    },
+    "bootloader": "rp2040",
+    "bootloader_instructions": "Hold the boot switch and tap the reset switch, or hold the top-left key when plugging in the board.",
+      "build": {
+        "lto": true
+      },
+    "features": {
+        "bootmagic": true,
+        "console": true,
+        "encoder": true,
+        "mousekey": true,
+        "extrakey": true,
+        "nkro": true,
+        "rgb_matrix": true
+    },
+    "diode_direction": "COL2ROW",
+    "matrix_pins": {
+        "direct": [
+            ["GP21", "GP22" ]
+        ]
+    },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "GP15","pin_b": "GP25","resolution": 4},
+            {"pin_a": "GP25","pin_b": "GP29","resolution": 4}
+        ]
+    },
+    "layouts": {
+        "LAYOUT_default": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0 },
+                { "matrix": [0, 1], "x": 1, "y": 0 }
+            ]
+        }
+    },
+
+    "rgb_matrix": {
+        "driver": "WS2812",
+        "layout": [
+            { "flags": 4, "matrix": [0, 0], "x": 224, "y": 64 }
+        ]
+    },
+    "ws2812": {
+        "pin": "GP28",
+        "driver": "vendor"
+      }
+
+}

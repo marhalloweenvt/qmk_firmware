@@ -1,0 +1,5 @@
+ENCODER_MAP_ENABLE = yes
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = custom
+# SRC += ui.c
+SRC += trackball.c

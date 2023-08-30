@@ -1,0 +1,23 @@
+{
+    "keyboard_name": "Onekey RP2040",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "matrix_pins": {
+        "direct": [
+            ["GP9"]
+        ]
+    },
+    "layouts": {
+        "LAYOUT_normal": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0 }
+            ]
+        }
+    },
+    "backlight": {
+        "pin": "GP25"
+    },
+    "ws2812": {
+        "pin": "GP25"
+    }
+}
